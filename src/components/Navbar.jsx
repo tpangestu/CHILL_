@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
 
 const Navbar = () => {
   // State untuk menu profil user
@@ -49,7 +48,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo CHILL */}
         <Link to="/home" className="flex items-center">
-          <img src={logo} alt="CHILL Logo" className="h-8 md:h-10" />
+          <img src="/logo.svg" alt="CHILL Logo" className="h-8 md:h-10" />
           <div className="ml-2 text-white font-semibold text-lg md:text-2xl hidden md:block">CHILL</div>
         </Link>
 

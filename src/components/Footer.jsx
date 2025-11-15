@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import logo from '../assets/logo.svg';
 
 const Footer = () => {
   // State untuk toggle dropdown genre di mobile
@@ -33,7 +32,7 @@ const Footer = () => {
           {/* Logo CHILL */}
           <div className="mb-8 md:mb-0">
             <Link to="/home" className="flex items-start md:items-center ">
-              <img src={logo} alt="CHILL Logo" className="h-10 md:h-40" />
+              <img src="/logo.svg" alt="CHILL Logo" className="h-10 md:h-40" />
               <div className="ml-2 text-white font-semibold text-4xl md:text-7xl">CHILL</div>
             </Link>
 
