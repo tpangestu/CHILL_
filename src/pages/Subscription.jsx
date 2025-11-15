@@ -4,7 +4,6 @@ import Button from '../components/Button';
 const Subscription = () => {
   const navigate = useNavigate();
 
-  // Daftar fitur-fitur berlangganan yang ditampilkan
   const features = [
     { icon: '📱', title: 'Download Konten Pilihan' },
     { icon: '🎬', title: 'Tidak Ada Iklan' },
@@ -14,7 +13,6 @@ const Subscription = () => {
     { icon: '💬', title: 'Subtitle Untuk Konten Pilihan' },
   ];
 
-  // Daftar paket berlangganan yang tersedia
   const plans = [
     {
       name: 'Individual',

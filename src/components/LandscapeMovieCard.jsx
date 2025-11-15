@@ -28,7 +28,6 @@ const LandscapeMovieCard = ({
   newEps,
   rating
 }) => {
-  // State untuk tracking hover pada card
   const [isHovered, setIsHovered] = useState(false);
 
   return (

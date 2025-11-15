@@ -9,7 +9,6 @@ const Modal = ({ isOpen, onClose, children, size = 'md' }) => {
   // Jangan render apapun jika modal tertutup
   if (!isOpen) return null;
 
-  // Konfigurasi ukuran modal yang tersedia
   const sizes = {
     sm: 'max-w-md',
     md: 'max-w-2xl',

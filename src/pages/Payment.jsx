@@ -14,11 +14,8 @@ const Payment = () => {
     minutes: 14,
     seconds: 59,
   });
-  // State untuk menyimpan metode pembayaran yang dipilih
   const [paymentMethod, setPaymentMethod] = useState('bca');
-  // State untuk menampilkan/menyembunyikan timer pembayaran
   const [showTimer, setShowTimer] = useState(false);
-  // State untuk menyimpan nomor Virtual Account yang di-generate
   const [virtualAccount, setVirtualAccount] = useState('');
 
   // Fungsi untuk generate nomor Virtual Account saat pembayaran dimulai

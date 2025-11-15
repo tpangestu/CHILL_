@@ -14,7 +14,6 @@ import MovieCard from "./MovieCard";
 const MovieDetailModal = ({ isOpen, onClose, movie }) => {
   const navigate = useNavigate();
 
-  // State untuk toggle mute pada preview video
   const [isMuted, setIsMuted] = useState(true);
 
   if (!movie) {
@@ -24,7 +23,7 @@ const MovieDetailModal = ({ isOpen, onClose, movie }) => {
   /**
    * Fungsi untuk mendapatkan rekomendasi movie berdasarkan genre
    * Prioritas: movie dengan genre sama, lalu random dari tipe yang sama
-   * @returns {Array} Array 3 movie recommendations
+   * @returns {Array} 
    */
   const getRecommendations = () => {
     const sourceData = movie.type === "series" ? series : movies;

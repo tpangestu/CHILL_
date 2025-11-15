@@ -16,7 +16,6 @@ const MovieRow = ({ title, movies, onMovieClick, onPlayClick, layout = 'portrait
   // Referensi ke scroll container
   const scrollContainerRef = useRef(null);
 
-  // State untuk show/hide tombol scroll
   const [showLeftButton, setShowLeftButton] = useState(false);
   const [showRightButton, setShowRightButton] = useState(true);
 
@@ -56,10 +55,7 @@ const MovieRow = ({ title, movies, onMovieClick, onPlayClick, layout = 'portrait
   const isLandscape = layout === 'landscape';
   const CardComponent = isLandscape ? LandscapeMovieCard : MovieCard;
 
-  // Kalkulasi lebar card berdasarkan jumlah cards per view
-  // Mobile landscape: 1 card, Mobile portrait: 3 cards
-  // Tablet (2 cards): (100% - 1 gap) / 2 = ~48%
-  // Desktop landscape: 4 cards, Desktop portrait: 5 cards
+ 
   let cardWidthClass, gapClass;
 
   if (isCompact) {

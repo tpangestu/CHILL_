@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Play, Check, ChevronDown, Star } from 'lucide-react';
 
 /**
- * Component card movie/series dengan layout portrait
  * @param {string} title - Judul film/series
  * @param {string} genre - Genre film/series
  * @param {string} duration - Durasi film atau jumlah episode
@@ -26,16 +25,11 @@ const MovieCard = ({
   topTenRank,
   newEps
 }) => {
-  // State untuk tracking hover pada card
   const [isHovered, setIsHovered] = useState(false);
 
-  // State untuk deteksi mobile device
   const [isMobile, setIsMobile] = useState(false);
 
-  /**
-   * Effect untuk deteksi ukuran layar dan tentukan apakah mobile
-   * Hover effect hanya aktif di desktop
-   */
+ 
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);

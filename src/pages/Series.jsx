@@ -7,17 +7,12 @@ import { series, topRated, continueWatching, newRelease } from "../data/moviesDa
 import { Play, Info, Volume2, VolumeX } from 'lucide-react';
 
 const Series = () => {
-  // Hook untuk navigasi halaman
   const navigate = useNavigate();
 
-  // State untuk menyimpan data series yang dipilih
   const [selectedMovie, setSelectedMovie] = useState(null);
-  // State untuk mengontrol tampilan modal detail series
   const [showDetailModal, setShowDetailModal] = useState(false);
-  // State untuk mengontrol status mute/unmute audio hero section
   const [isMuted, setIsMuted] = useState(true);
 
-  // Series untuk ditampilkan di hero section - mencari 'Of Us Are Dead' atau series pertama
   const heroMovie = series.find(m => m.title === 'Of Us Are Dead') || series[0];
 
   // Fungsi untuk menangani klik pada card series - membuka modal detail

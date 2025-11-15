@@ -4,14 +4,12 @@ import { useState } from 'react';
  * Component dropdown untuk memilih genre
  * @param {Function} onGenreSelect - Callback ketika genre dipilih
  */
+
 const GenreDropdown = ({ onGenreSelect }) => {
-  // State untuk toggle dropdown
   const [isOpen, setIsOpen] = useState(false);
 
-  // State untuk menyimpan genre yang dipilih
   const [selectedGenre, setSelectedGenre] = useState('Genre');
 
-  // Daftar genre yang tersedia
   const genres = [
     'Aksi',
     'Anak-anak',

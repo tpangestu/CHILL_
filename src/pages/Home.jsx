@@ -7,11 +7,8 @@ import { movies, series, continueWatching, topRated, newRelease } from '../data/
 
 const Home = () => {
   const navigate = useNavigate();
-  // State untuk menyimpan film yang dipilih
   const [selectedMovie, setSelectedMovie] = useState(null);
-  // State untuk menampilkan/menyembunyikan modal detail film
   const [showDetailModal, setShowDetailModal] = useState(false);
-  // State untuk status mute/unmute audio hero section
   const [isMuted, setIsMuted] = useState(true);
 
   // Handler saat film diklik untuk menampilkan detail

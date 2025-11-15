@@ -6,9 +6,7 @@ import { movies, series } from '../data/moviesData';
 
 const MyList = () => {
   const navigate = useNavigate();
-  // State untuk menyimpan film yang dipilih
   const [selectedMovie, setSelectedMovie] = useState(null);
-  // State untuk menampilkan/menyembunyikan modal detail
   const [showDetailModal, setShowDetailModal] = useState(false);
 
   // Daftar film favorit (gabungan movies dan series)

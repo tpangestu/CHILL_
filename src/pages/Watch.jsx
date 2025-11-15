@@ -3,11 +3,8 @@ import VideoPlayer from '../components/VideoPlayer';
 import PremiumOverlay from '../components/PremiumOverlay';
 
 const Watch = () => {
-  // Mendapatkan lokasi saat ini dan data yang dikirim melalui routing
   const location = useLocation();
-  // Hook untuk navigasi halaman
   const navigate = useNavigate();
-  // Mengambil data film dari state routing
   const movie = location.state?.movie;
   // Memeriksa apakah film merupakan konten premium (default: false)
   const isPremium = location.state?.isPremium || false;

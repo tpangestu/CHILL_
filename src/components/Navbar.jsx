@@ -2,16 +2,12 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  // State untuk menu profil user
   const [showProfileMenu, setShowProfileMenu] = useState(false);
 
-  // State untuk dropdown genre
   const [showGenreDropdown, setShowGenreDropdown] = useState(false);
 
-  // State untuk deteksi scroll - mengubah style navbar
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Daftar genre yang tersedia
   const genres = [
     'Aksi',
     'Anak-anak',

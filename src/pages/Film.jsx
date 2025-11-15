@@ -7,17 +7,12 @@ import { movies, topRated, continueWatching, newRelease } from '../data/moviesDa
 import { Play, Info, Volume2, VolumeX } from 'lucide-react';
 
 const Film = () => {
-  // Hook untuk navigasi halaman
   const navigate = useNavigate();
 
-  // State untuk menyimpan data film yang dipilih
   const [selectedMovie, setSelectedMovie] = useState(null);
-  // State untuk mengontrol tampilan modal detail film
   const [showDetailModal, setShowDetailModal] = useState(false);
-  // State untuk mengontrol status mute/unmute audio hero section
   const [isMuted, setIsMuted] = useState(true);
 
-  // Film untuk ditampilkan di hero section - mengambil film pertama dari array movies
   const heroMovie = movies[0] || movies.find(m => m.title === "Don't Look Up");
 
   // Fungsi untuk menangani klik pada card film - membuka modal detail

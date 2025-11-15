@@ -7,8 +7,7 @@ import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, Maximize, Minimiz
  * @param {Function} onBack - Handler untuk tombol kembali
  */
 const VideoPlayer = ({ movie, onBack }) => {
-  // State untuk kontrol playback
-  const [isPlaying, setIsPlaying] = useState(false); // Status video sedang diputar atau tidak
+  const [isPlaying, setIsPlaying] = useState(false); 
   const [isMuted, setIsMuted] = useState(false); // Status audio muted atau tidak
   const [showControls, setShowControls] = useState(true); // Menampilkan/menyembunyikan kontrol video
 

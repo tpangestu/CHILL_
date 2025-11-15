@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 /**
- * Component input field dengan fitur show/hide password
  * @param {string} label - Label untuk input field
  * @param {string} type - Tipe input (text, password, email, dll)
  * @param {string} placeholder - Placeholder text

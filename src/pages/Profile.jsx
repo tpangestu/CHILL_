@@ -10,11 +10,8 @@ const Profile = () => {
   // Hook untuk navigasi halaman
   const navigate = useNavigate();
 
-  // State untuk status berlangganan (true = berlangganan, false = belum berlangganan)
   const [isSubscribed, setIsSubscribed] = useState(false);
-  // State untuk menyimpan data film yang dipilih
   const [selectedMovie, setSelectedMovie] = useState(null);
-  // State untuk mengontrol tampilan modal detail film
   const [showDetailModal, setShowDetailModal] = useState(false);
 
   // Gabungkan movies dan series untuk daftar saya (6 film + 6 series)

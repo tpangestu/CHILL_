@@ -3,20 +3,16 @@ import { Link } from 'react-router-dom';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const Footer = () => {
-  // State untuk toggle dropdown genre di mobile
   const [isGenreOpen, setIsGenreOpen] = useState(false);
 
-  // State untuk toggle dropdown bantuan di mobile
   const [isHelpOpen, setIsHelpOpen] = useState(false);
 
-  // Daftar genre yang tersedia
   const genreLinks = [
     'Aksi', 'Anak-anak', 'Anime', 'Sci-Fi',
     'Drama', 'Fantasi Ilmiah & Fantasi', 'Kejahatan', 'KDrama',
     'Komedi', 'Petualangan', 'Perang', 'Romantis', 'Sains & Alam', 'Thriller'
   ];
 
-  // Daftar link bantuan
   const helpLinks = [
     { name: 'FAQ', path: '#' },
     { name: 'Kontak Kami', path: '#' },

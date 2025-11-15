@@ -5,7 +5,6 @@ import Button from "../components/Button";
 
 const Register = () => {
   const navigate = useNavigate();
-  // State untuk menyimpan data form registrasi
   const [formData, setFormData] = useState({
     name: "",
     email: "",
