@@ -41,7 +41,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 w-full z-50 px-4 md:px-8 py-4 transition-all duration-300 ${
       isScrolled ? 'bg-black/95 backdrop-blur-md' : 'bg-gradient-to-b from-black/80 to-transparent'
     }`}>
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
+      <div className="flex items-center justify-between w-full mx-auto">
         {/* Logo CHILL */}
         <Link to="/home" className="flex items-center">
           <img src="/logo-white.svg" alt="CHILL Logo" className="h-8 md:h-10" />

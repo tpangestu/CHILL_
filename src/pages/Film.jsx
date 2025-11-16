@@ -83,14 +83,14 @@ const Film = () => {
             <div className="flex flex-wrap gap-3 md:gap-4 ">
               <button
                 onClick={handleHeroPlayClick}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-2.5 md:py-3 rounded-md font-semibold text-sm md:text-base flex items-center gap-2 transition-all hover:scale-105 shadow-lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-2 md:px-8 py-2 md:py-3 rounded-md font-semibold text-[10px] md:text-base flex items-center gap-2 transition-all hover:scale-105 shadow-l"
               >
                 <Play className="w-5 h-5 fill-current" />
                 Mulai
               </button>
               <button
                 onClick={() => handleMovieClick(heroMovie)}
-                className="bg-gray-600/80 hover:bg-gray-600 backdrop-blur-sm text-white px-6 md:px-8 py-2.5 md:py-3 rounded-md font-semibold text-sm md:text-base flex items-center gap-2 transition-all hover:scale-105 border border-gray-500"
+                className="bg-gray-600/80 hover:bg-gray-600 backdrop-blur-sm text-white px-4 md:px-8 py-2 md:py-3 rounded-md font-semibold text-[10px] md:text-base flex items-center gap-2 transition-all hover:scale-105 border border-gray-500"
               >
                 <Info className="w-5 h-5" />
                 Selengkapnya
