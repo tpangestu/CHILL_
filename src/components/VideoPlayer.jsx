@@ -27,12 +27,11 @@ const VideoPlayer = ({ movie, onBack }) => {
   // Referensi ke container video untuk fullscreen functionality
   const videoContainerRef = useRef(null);
 
-  // Sample episode data for series
   const episodes = [
-    { id: 1, title: 'Pilot', duration: '45m', thumbnail: movie?.imageLandscape },
-    { id: 2, title: 'Biscuits', duration: '42m', description: "It's Ted's first day of coaching, and fans aren't happy. He makes little headway but remains undeterred as the team...", thumbnail: movie?.imageLandscape },
-    { id: 3, title: 'Trent Crimm: The Independent', duration: '45m', thumbnail: movie?.imageLandscape },
-    { id: 4, title: 'For the Children', duration: '43m', thumbnail: movie?.imageLandscape },
+    { id: 1, title: 'ini judul eps 1', duration: '45m', thumbnail: movie?.imageLandscape },
+    { id: 2, title: 'ini judul eps 2', duration: '42m', thumbnail: movie?.imageLandscape },
+    { id: 3, title: 'ini judul eps 3', duration: '45m', thumbnail: movie?.imageLandscape },
+    { id: 4, title: 'ini judul eps 4', duration: '43m', thumbnail: movie?.imageLandscape },
   ];
 
   const audioOptions = ['Bahasa Inggris', 'Bahasa Inggris - Audio Description'];

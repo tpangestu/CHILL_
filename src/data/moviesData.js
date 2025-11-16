@@ -478,7 +478,7 @@ export const topRated = [
     topTenRank: true,
     newEps: false,
     type: "series",
-    image: "/assets/p_wednesday.png",
+    image: "/assets/p_Wednesday.png",
     imageLandscape: "/assets/l_wednesday.png",
     sinopsis: "Wednesday Addams menyelidiki serangkaian pembunuhan misterius sambil berusaha menguasai kemampuan psikisnya di Nevermore Academy. Ia harus menghadapi monster yang mengancam kota dan mengungkap rahasia keluarganya.",
   },
