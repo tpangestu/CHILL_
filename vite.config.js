@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   publicDir: 'public',
-  base: '/',
+  base: '/CHILL_ReactJS',
 })
