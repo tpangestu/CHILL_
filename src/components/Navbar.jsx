@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/assetPath';
 
 const Navbar = () => {
   const [showProfileMenu, setShowProfileMenu] = useState(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full mx-auto">
         {/* Logo CHILL */}
         <Link to="/home" className="flex items-center">
-          <img src="/logo-white.svg" alt="CHILL Logo" className="h-8 md:h-10" />
+          <img src={getAssetPath("/logo-white.svg")} alt="CHILL Logo" className="h-8 md:h-10" />
           <div className="ml-2 text-white font-semibold text-lg md:text-2xl hidden md:block">CHILL</div>
         </Link>
 

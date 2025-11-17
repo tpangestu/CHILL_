@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { getAssetPath } from "../utils/assetPath";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Login = () => {
       <div className="fixed inset-0 z-0">
         {/* Gambar background kursi teater */}
         <img
-          src="/assets/bg-login.jpg"
+          src={getAssetPath("/assets/bg-login.jpg")}
           alt=""
           className="w-full h-full object-cover"
         />
@@ -46,7 +47,7 @@ const Login = () => {
         <div className="bg-gray-900/85 backdrop-blur-sm rounded-lg p-8 shadow-2xl">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4 gap-2">
-              <img src="/logo-white.svg" alt="Chill logo" className="h-5 md:h-8 lg:h-10" />
+              <img src={getAssetPath("/logo-white.svg")} alt="Chill logo" className="h-5 md:h-8 lg:h-10" />
               <h1 className="text-white text-3xl font-bold mb-2">CHILL</h1>
             </div>
             <p className="text-gray-100">Masuk</p>
