@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(node fix-assets.cjs:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
